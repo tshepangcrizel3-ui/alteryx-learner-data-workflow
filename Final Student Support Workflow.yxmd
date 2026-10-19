@@ -1,0 +1,1259 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2026.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1326" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="match_string" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="match_string" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_sex" selected="True" rename="Right_sex" input="Right_" />
+                <SelectField field="Right_age" selected="True" rename="Right_age" input="Right_" />
+                <SelectField field="Right_address" selected="True" rename="Right_address" input="Right_" />
+                <SelectField field="Right_famsize" selected="True" rename="Right_famsize" input="Right_" />
+                <SelectField field="Right_Pstatus" selected="True" rename="Right_Pstatus" input="Right_" />
+                <SelectField field="Right_Medu" selected="True" rename="Right_Medu" input="Right_" />
+                <SelectField field="Right_Fedu" selected="True" rename="Right_Fedu" input="Right_" />
+                <SelectField field="Right_Mjob" selected="True" rename="Right_Mjob" input="Right_" />
+                <SelectField field="Right_school" selected="True" rename="Right_school" input="Right_" />
+                <SelectField field="Right_Fjob" selected="True" rename="Right_Fjob" input="Right_" />
+                <SelectField field="Right_reason" selected="True" rename="Right_reason" input="Right_" />
+                <SelectField field="Right_guardian" selected="True" rename="Right_guardian" input="Right_" />
+                <SelectField field="Right_traveltime" selected="True" rename="Right_traveltime" input="Right_" />
+                <SelectField field="Right_studytime" selected="True" rename="Right_studytime" input="Right_" />
+                <SelectField field="Right_failures" selected="True" rename="Right_failures" input="Right_" />
+                <SelectField field="Right_schoolsup" selected="True" rename="Right_schoolsup" input="Right_" />
+                <SelectField field="Right_famsup" selected="True" rename="Right_famsup" input="Right_" />
+                <SelectField field="Right_paid" selected="True" rename="Right_paid" input="Right_" />
+                <SelectField field="Right_activities" selected="True" rename="Right_activities" input="Right_" />
+                <SelectField field="Right_nursery" selected="True" rename="Right_nursery" input="Right_" />
+                <SelectField field="Right_higher" selected="True" rename="Right_higher" input="Right_" />
+                <SelectField field="Right_internet" selected="True" rename="Right_internet" input="Right_" />
+                <SelectField field="Right_romantic" selected="True" rename="Right_romantic" input="Right_" />
+                <SelectField field="Right_famrel" selected="True" rename="Right_famrel" input="Right_" />
+                <SelectField field="Right_freetime" selected="True" rename="Right_freetime" input="Right_" />
+                <SelectField field="Right_goout" selected="True" rename="Right_goout" input="Right_" />
+                <SelectField field="Right_Dalc" selected="True" rename="Right_Dalc" input="Right_" />
+                <SelectField field="Right_Walc" selected="True" rename="Right_Walc" input="Right_" />
+                <SelectField field="Right_health" selected="True" rename="Right_health" input="Right_" />
+                <SelectField field="Right_absences" selected="True" rename="Right_absences" input="Right_" />
+                <SelectField field="Right_G1" selected="True" rename="Right_G1" input="Right_" />
+                <SelectField field="Right_G2" selected="True" rename="Right_G2" input="Right_" />
+                <SelectField field="Right_G3" selected="True" rename="Right_G3" input="Right_" />
+                <SelectField field="Right_match_string" selected="True" rename="Right_match_string" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Join – Cross-Course Learner Matching: Join the Portuguese and Maths learner datasets using the shared match_string composite key. This links records representing the same learner across both course datasets.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1398" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_bce89023601f43b9b214fcb64c236448~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse – Right Unjoined Records: Review Maths learner records that did not find a matching Portuguese record. These records are retained for review rather than being automatically discarded.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1398" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_83557d2e00fa407da467259cda540045~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse – Joined Records: Inspect successfully matched Portuguese and Maths learner records and verify that the cross-course matching results are reasonable before continuing with the analysis.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1494" y="246" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 2 – Handling Unjoined Records and Fallbacks
+Reviewed the Left Unmatched (L) and Right Unmatched (R) outputs from the Join tool. Both outputs contain 0 records, indicating that all 675 records were successfully matched. No fallback or near-match processing was required.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1530" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">_externals\1\Student_Merged_Data.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Student_Merged_Data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1662" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>NPercent</Mode>
+          <N>70</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 70% of rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1734" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>NPercent</Mode>
+          <N>50</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 50% of rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1902" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_2dde25db5ed44634932b5528f210a2f7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Validation Tier Check – approximately 101 records (15% of total dataset).</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1878" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_e233e8503ba743b29f07a8bd9dd29055~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Production Tier Check – approximately 101 records (15% of total dataset).</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1758" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_6120de87952941ad95f5e1c7f08138ff~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Training Tier Check – 473 records (70% of total dataset).</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\2\student-por.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>;</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input Data – Source: Import the student-por.csv Portuguese student performance dataset into the workflow. Verify that the CSV delimiter and field names are correctly recognised and that all 649 learner records are loaded.</AnnotationText>
+          <DefaultAnnotationText>student-por.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="school" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="sex" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="age" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="address" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famsize" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Pstatus" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Medu" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Fedu" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Mjob" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Fjob" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="reason" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="guardian" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="traveltime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="studytime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="failures" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="schoolsup" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famsup" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="paid" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="activities" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="nursery" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="higher" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="internet" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="romantic" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famrel" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="freetime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="goout" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Dalc" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Walc" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="health" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="absences" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G1" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G2" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G3" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_5de2e352fb1146a98d2c19e9f7c0f9ba~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse – Data Quality Check: Inspect the imported student-por.csv data to verify the records, fields, data types, and identify any missing values or anomalies before further processing.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="sex" selected="True" />
+            <SelectField field="age" selected="True" />
+            <SelectField field="address" selected="True" />
+            <SelectField field="famsize" selected="True" />
+            <SelectField field="Pstatus" selected="True" />
+            <SelectField field="Medu" selected="True" />
+            <SelectField field="Fedu" selected="True" />
+            <SelectField field="Mjob" selected="True" />
+            <SelectField field="school" selected="True" />
+            <SelectField field="Fjob" selected="True" />
+            <SelectField field="reason" selected="True" />
+            <SelectField field="guardian" selected="True" />
+            <SelectField field="traveltime" selected="True" />
+            <SelectField field="studytime" selected="True" />
+            <SelectField field="failures" selected="True" />
+            <SelectField field="schoolsup" selected="True" />
+            <SelectField field="famsup" selected="True" />
+            <SelectField field="paid" selected="True" />
+            <SelectField field="activities" selected="True" />
+            <SelectField field="nursery" selected="True" />
+            <SelectField field="higher" selected="True" />
+            <SelectField field="internet" selected="True" />
+            <SelectField field="romantic" selected="True" />
+            <SelectField field="famrel" selected="True" />
+            <SelectField field="freetime" selected="True" />
+            <SelectField field="goout" selected="True" />
+            <SelectField field="Dalc" selected="True" />
+            <SelectField field="Walc" selected="True" />
+            <SelectField field="health" selected="True" />
+            <SelectField field="absences" selected="True" />
+            <SelectField field="G1" selected="True" />
+            <SelectField field="G2" selected="True" />
+            <SelectField field="G3" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select – Source-to-Target Mapping: Retain the 13 common learner fields required for cross-course matching. Unnecessary fields will be excluded from the matching stream. These fields will be used to create the hashed learner key.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
+        <Position x="546" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RemoveNullRows value="False" />
+          <RemoveNullColumns value="False" />
+          <RemoveTabsLineBreaksAndDuplicates value="True" />
+          <RemoveLeadingAndTrailingWhitespace value="True" />
+          <RemoveAllWhitespaces value="False" />
+          <RemoveHTMLTags value="False" />
+          <RemoveInvisibleCharacters value="False" />
+          <Fields>
+            <Field value="sex" selected="True" />
+            <Field value="age" selected="True" />
+            <Field value="address" selected="True" />
+            <Field value="famsize" selected="True" />
+            <Field value="Pstatus" selected="True" />
+            <Field value="Medu" selected="True" />
+            <Field value="Fedu" selected="True" />
+            <Field value="Mjob" selected="True" />
+            <Field value="school" selected="True" />
+            <Field value="Fjob" selected="True" />
+            <Field value="reason" selected="True" />
+            <Field value="guardian" selected="True" />
+            <Field value="traveltime" selected="True" />
+            <Field value="studytime" selected="True" />
+            <Field value="failures" selected="True" />
+            <Field value="schoolsup" selected="True" />
+            <Field value="famsup" selected="True" />
+            <Field value="paid" selected="True" />
+            <Field value="activities" selected="True" />
+            <Field value="nursery" selected="True" />
+            <Field value="higher" selected="True" />
+            <Field value="internet" selected="True" />
+            <Field value="romantic" selected="True" />
+            <Field value="famrel" selected="True" />
+            <Field value="freetime" selected="True" />
+            <Field value="goout" selected="True" />
+            <Field value="Dalc" selected="True" />
+            <Field value="Walc" selected="True" />
+            <Field value="health" selected="True" />
+            <Field value="absences" selected="True" />
+            <Field value="G1" selected="True" />
+            <Field value="G2" selected="True" />
+            <Field value="G3" selected="True" />
+            <Field value="*Unknown" selected="True" />
+          </Fields>
+          <RemoveLetters value="False" />
+          <RemoveNumbers value="False" />
+          <RemovePunctuation value="False" />
+          <Letters value="" />
+          <Numbers value="" />
+          <Punctuations value="" />
+          <Exceptions value="" />
+          <Checkbox_ReplaceStringColumns value="False" />
+          <Checkbox_ReplaceNumericColumns value="False" />
+          <radioButton_ReplaceNullwithBlanks value="True" />
+          <radioButton_ReplaceBlankswithNulls value="False" />
+          <radioButton_ReplaceNullwithZero value="True" />
+          <radioButton_ReplaceZerowithNulls value="False" />
+          <ReplaceWithBlanks value="False" />
+          <ReplaceWithZero value="False" />
+          <CheckBox_ModifyCase value="False" />
+          <ModifyCase value="none" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Cleansing – Standardisation: Remove leading/trailing whitespace and standardise spacing in the matching fields. Preserve legitimate learner values and do not impute missing data because the source contains no missing cells.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDataCleanse" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="LowerCase(Trim([school])) + &quot;|&quot; + LowerCase(Trim([sex])) + &quot;|&quot; + Trim([age]) + &quot;|&quot; + LowerCase(Trim([address])) + &quot;|&quot; + LowerCase(Trim([famsize])) + &quot;|&quot; + LowerCase(Trim([Pstatus])) + &quot;|&quot; + Trim([Medu]) + &quot;|&quot; + Trim([Fedu]) + &quot;|&quot; + LowerCase(Trim([Mjob])) + &quot;|&quot; + LowerCase(Trim([Fjob])) + &quot;|&quot; + LowerCase(Trim([reason])) + &quot;|&quot; + LowerCase(Trim([nursery])) + &quot;|&quot; + LowerCase(Trim([internet]))" field="match_string" size="500" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Formula – Composite Match String: Concatenate the 13 approved cross-course matching fields in a fixed order, using | as a delimiter. Trim whitespace and standardise text to lowercase so the same learner can be matched consistently across the Maths and Portuguese datasets.
+
+]]></AnnotationText>
+          <DefaultAnnotationText>match_string = LowerCase(Trim([school])) + "|" + LowerCase(Trim([sex])) + "|" + ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlobConvert.BlobConvert">
+        <Position x="846" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ToBlob value="True" />
+          <to_Field>match_string</to_Field>
+          <to_Mode>Text</to_Mode>
+          <to_textCodePage>UTF16</to_textCodePage>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Blob Convert – Prepare Hash Input: Convert the standardised match_string text into a Blob field using the selected text encoding. This prepares the composite learner information for secure SHA-256 hashing.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlobConvert" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlobConvert.BlobConvert">
+        <Position x="1014" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ToBlob value="False" />
+          <from_Field>match_string</from_Field>
+          <from_Mode>SHA256</from_Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Blob Convert – SHA-256 Learner Key: Convert the Blob field into a SHA-256 hash to create a consistent 64-character learner_key. This hashed key is used to match learner records across datasets without exposing the original identifying fields.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlobConvert" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1590" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="sex" selected="True" />
+            <SelectField field="age" selected="True" />
+            <SelectField field="address" selected="True" />
+            <SelectField field="famsize" selected="True" />
+            <SelectField field="Pstatus" selected="True" />
+            <SelectField field="Medu" selected="True" />
+            <SelectField field="Fedu" selected="True" />
+            <SelectField field="Mjob" selected="True" />
+            <SelectField field="school" selected="True" />
+            <SelectField field="Fjob" selected="True" />
+            <SelectField field="reason" selected="True" />
+            <SelectField field="guardian" selected="True" />
+            <SelectField field="traveltime" selected="True" />
+            <SelectField field="studytime" selected="True" />
+            <SelectField field="failures" selected="True" />
+            <SelectField field="schoolsup" selected="True" />
+            <SelectField field="famsup" selected="True" />
+            <SelectField field="paid" selected="True" />
+            <SelectField field="activities" selected="True" />
+            <SelectField field="nursery" selected="True" />
+            <SelectField field="higher" selected="True" />
+            <SelectField field="internet" selected="True" />
+            <SelectField field="romantic" selected="True" />
+            <SelectField field="famrel" selected="True" />
+            <SelectField field="freetime" selected="True" />
+            <SelectField field="goout" selected="True" />
+            <SelectField field="Dalc" selected="True" />
+            <SelectField field="Walc" selected="True" />
+            <SelectField field="health" selected="True" />
+            <SelectField field="absences" selected="True" />
+            <SelectField field="G1" selected="True" />
+            <SelectField field="G2" selected="True" />
+            <SelectField field="G3" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select – Source-to-Target Mapping: Retain the 13 common learner fields required for cross-course matching. Unnecessary fields will be excluded from the matching stream. These fields will be used to create the hashed learner key.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
+        <Position x="1722" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RemoveNullRows value="False" />
+          <RemoveNullColumns value="False" />
+          <RemoveTabsLineBreaksAndDuplicates value="True" />
+          <RemoveLeadingAndTrailingWhitespace value="True" />
+          <RemoveAllWhitespaces value="False" />
+          <RemoveHTMLTags value="False" />
+          <RemoveInvisibleCharacters value="False" />
+          <Fields>
+            <Field value="sex" selected="True" />
+            <Field value="age" selected="True" />
+            <Field value="address" selected="True" />
+            <Field value="famsize" selected="True" />
+            <Field value="Pstatus" selected="True" />
+            <Field value="Medu" selected="True" />
+            <Field value="Fedu" selected="True" />
+            <Field value="Mjob" selected="True" />
+            <Field value="school" selected="True" />
+            <Field value="Fjob" selected="True" />
+            <Field value="reason" selected="True" />
+            <Field value="guardian" selected="True" />
+            <Field value="traveltime" selected="True" />
+            <Field value="studytime" selected="True" />
+            <Field value="failures" selected="True" />
+            <Field value="schoolsup" selected="True" />
+            <Field value="famsup" selected="True" />
+            <Field value="paid" selected="True" />
+            <Field value="activities" selected="True" />
+            <Field value="nursery" selected="True" />
+            <Field value="higher" selected="True" />
+            <Field value="internet" selected="True" />
+            <Field value="romantic" selected="True" />
+            <Field value="famrel" selected="True" />
+            <Field value="freetime" selected="True" />
+            <Field value="goout" selected="True" />
+            <Field value="Dalc" selected="True" />
+            <Field value="Walc" selected="True" />
+            <Field value="health" selected="True" />
+            <Field value="absences" selected="True" />
+            <Field value="G1" selected="True" />
+            <Field value="G2" selected="True" />
+            <Field value="G3" selected="True" />
+            <Field value="*Unknown" selected="True" />
+          </Fields>
+          <RemoveLetters value="False" />
+          <RemoveNumbers value="False" />
+          <RemovePunctuation value="False" />
+          <Letters value="" />
+          <Numbers value="" />
+          <Punctuations value="" />
+          <Exceptions value="" />
+          <Checkbox_ReplaceStringColumns value="False" />
+          <Checkbox_ReplaceNumericColumns value="False" />
+          <radioButton_ReplaceNullwithBlanks value="True" />
+          <radioButton_ReplaceBlankswithNulls value="False" />
+          <radioButton_ReplaceNullwithZero value="True" />
+          <radioButton_ReplaceZerowithNulls value="False" />
+          <ReplaceWithBlanks value="False" />
+          <ReplaceWithZero value="False" />
+          <CheckBox_ModifyCase value="False" />
+          <ModifyCase value="none" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Cleansing – Standardisation: Remove leading/trailing whitespace and standardise spacing in the matching fields. Preserve legitimate learner values and do not impute missing data because the source contains no missing cells.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDataCleanse" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1854" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="LowerCase(Trim([school])) + &quot;|&quot; + LowerCase(Trim([sex])) + &quot;|&quot; + Trim([age]) + &quot;|&quot; + LowerCase(Trim([address])) + &quot;|&quot; + LowerCase(Trim([famsize])) + &quot;|&quot; + LowerCase(Trim([Pstatus])) + &quot;|&quot; + Trim([Medu]) + &quot;|&quot; + Trim([Fedu]) + &quot;|&quot; + LowerCase(Trim([Mjob])) + &quot;|&quot; + LowerCase(Trim([Fjob])) + &quot;|&quot; + LowerCase(Trim([reason])) + &quot;|&quot; + LowerCase(Trim([nursery])) + &quot;|&quot; + LowerCase(Trim([internet]))" field="match_string" size="500" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Formula – Composite Match String: Concatenate the 13 approved cross-course matching fields in a fixed order, using | as a delimiter. Trim whitespace and standardise text to lowercase so the same learner can be matched consistently across the Maths and Portuguese datasets.
+
+]]></AnnotationText>
+          <DefaultAnnotationText>match_string = LowerCase(Trim([school])) + "|" + LowerCase(Trim([sex])) + "|" + ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlobConvert.BlobConvert">
+        <Position x="2022" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ToBlob value="True" />
+          <to_Field>match_string</to_Field>
+          <to_Mode>Text</to_Mode>
+          <to_textCodePage>UTF16</to_textCodePage>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Blob Convert – Prepare Hash Input: Convert the standardised match_string text into a Blob field using the selected text encoding. This prepares the composite learner information for secure SHA-256 hashing.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlobConvert" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlobConvert.BlobConvert">
+        <Position x="2190" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ToBlob value="False" />
+          <from_Field>match_string</from_Field>
+          <from_Mode>SHA256</from_Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Blob Convert – SHA-256 Learner Key: Convert the Blob field into a SHA-256 hash to create a consistent 64-character learner_key. This hashed key is used to match learner records across datasets without exposing the original identifying fields.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlobConvert" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1158" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\2\student-por.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>;</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input Data – Source: Import the student-por.csv Portuguese student performance dataset into the workflow. Verify that the CSV delimiter and field names are correctly recognised and that all 649 learner records are loaded.</AnnotationText>
+          <DefaultAnnotationText>student-por.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="school" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="sex" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="age" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="address" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famsize" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Pstatus" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Medu" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Fedu" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Mjob" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Fjob" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="reason" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="guardian" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="traveltime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="studytime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="failures" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="schoolsup" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famsup" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="paid" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="activities" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="nursery" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="higher" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="internet" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="romantic" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="famrel" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="freetime" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="goout" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Dalc" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="Walc" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="health" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="absences" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G1" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G2" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+            <Field name="G3" size="254" source="File: C:\Users\tshep\Downloads\student-por.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1386" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_28d0d38fa0ee48b5997bda246b8ef81b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse – Left Unjoined Records: Review Portuguese learner records that did not find a matching Maths record. These records are retained for review rather than being automatically discarded.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1494" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\tshep\AppData\Local\Temp\Alteryx\Engine_11936_26088bb69cba44cebe550ad505495378_\Engine_11936_6d779b2d2621424592ad7209b3246747~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse – Data Quality Check: Inspect the imported student-por.csv data to verify the records, fields, data types, and identify any missing values or anomalies before further processing.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="SelectRecords.yxmc">
+        <Position x="1830" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">474+</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remainder / Validation &amp; Production: Records 474–675 are separated from the 675 joined records to create the 30% remainder for Validation and Production tiering.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2034" y="438" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Operational Playbook – Linking the Files
+The workflow joins the Portuguese and Maths learner datasets using the Join tool. The Join produced 675 matched records, with 0 unmatched records. The data is divided into Training (70% = 473 records), Validation (15% ≈ 101 records), and Production (15% ≈ 101 records). The workflow is documented to support reproducibility and future maintenance.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="1" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1314" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ToNumber([absences]) &lt;= 2 THEN &quot;Regular&quot;&#xA;ELSEIF ToNumber([absences]) &lt;= 6 THEN &quot;Watch&quot;&#xA;ELSE &quot;Concern&quot;&#xA;ENDIF" field="Band" size="2147483647" type="V_String" enabled="true" />
+            <FormulaField expression="IF IsNull([G1]) THEN [Right_G1]&#xA;ELSEIF IsNull([Right_G1]) THEN [G1]&#xA;ELSE Min([G1], [Right_G1])&#xA;ENDIF" field="baseline_g1" size="2147483647" type="V_String" enabled="true" />
+            <FormulaField expression="IF ToNumber([baseline_g1]) &lt; 10 THEN 1 ELSE 0 ENDIF" field="g1_flag" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF ToNumber([failures]) &gt;= 1 THEN 1 ELSE 0 ENDIF" field="failures_flag" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF ToNumber([studytime]) = 1 THEN 1 ELSE 0 ENDIF" field="studytime_flag" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="[g1_flag] + [failures_flag] + [studytime_flag]" field="risk_score" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF [risk_score] &gt;= 2 THEN &quot;High&quot;&#xA;ELSEIF [risk_score] = 1 THEN &quot;Medium&quot;&#xA;ELSE &quot;Low&quot;&#xA;ENDIF" field="Tier" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 3 – Supporting Flags and Risk Tiering:
+Creates an attendance band using absences: 0–2 = Regular, 3–6 = Watch, and 7+ = Concern. Calculates the baseline G1 score using the available G1 value from either subject, then creates a G1 flag when the baseline G1 score is below 10. Adds a failures flag for students with at least one past failure and a study-time flag for students with low study time. Combines these flags into a risk score and assigns each student to a High, Medium, or Low risk Tier.</AnnotationText>
+          <DefaultAnnotationText>Band = IF ToNumber([absences]) &lt;= 2 THEN "Regular"
+ELSEIF ToNumber([absences]) &lt;...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Test.Test">
+        <Position x="1470" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Tests>
+            <Test>
+              <Name>Risk Score Range</Name>
+              <Connection>#1</Connection>
+              <Type>ExpAll</Type>
+              <Value>[risk_score] &gt;= 0 AND [risk_score] &lt;= 3</Value>
+            </Test>
+            <Test>
+              <Name>Learner Key Not Blank</Name>
+              <Connection>#1</Connection>
+              <Type>ExpAll</Type>
+              <Value>NOT IsNull([match_string])</Value>
+            </Test>
+          </Tests>
+          <DontReportSubsequent value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Risk Score Range
+Learner Key Not Blank</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTest" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1470" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[risk_score] &gt;= 0 AND [risk_score] &lt;= 3
+AND NOT IsNull([match_string])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 5 – Quarantine and Test Assertions: Validates risk scores (0–3) and ensures the match string is not null. Valid records continue through the True output, while invalid records are routed through the False output to Quarantined_invalid_records.csv. No invalid records were identified.</AnnotationText>
+          <DefaultAnnotationText>[risk_score] &gt;= 0 AND [risk_score] &lt;= 3
+AND NOT IsNull([match_string])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1650" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">_externals\1\Quarantined_invlalid_records.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Quarantined_invlalid_records.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1794" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="sex" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 6 – Summarize and Reconcile: Counted the records in the merged dataset to verify that all 675 records are accounted for.</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1650" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">_externals\1\Clean learner_support_staging.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clean learner_support_staging.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="15" Connection="Right" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Left" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="False" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Final Student Support Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0ea7008e-aeda-4189-94c6-95560e28b210" />
+      <Telemetry>
+        <PreviousWorkflowId value="a4bf6089-5596-4298-9793-969ac20a36ab" />
+        <OriginWorkflowId value="be5ad255-a9f0-49b4-a3f9-d529f7482d48" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
